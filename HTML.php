@@ -70,9 +70,9 @@ class HTML
      */
     public static function link($label, $url = null, array $attributes = array())
     {
-        // If the label is null, use the URL
-        if ($label === null) {
-            $label = $url;
+        // If the URL is null, use the label
+        if ($url === null) {
+            $url = $label;
         }
 
         // If the URL parameter is an object, call its `href()` method.
