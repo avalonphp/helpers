@@ -1,7 +1,7 @@
 {
-    "name": "radium/helpers",
-    "description": "Radium Helpers Component.",
-    "keywords": ["radium", "framework", "helpers"],
+    "name": "avalon/helpers",
+    "description": "Avalon Helpers Component.",
+    "keywords": ["avalon", "framework", "helpers"],
     "license": "Apache-2.0",
     "authors": [
         {
@@ -14,7 +14,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Radium\\Helpers\\": "src/"
+            "Avalon\\Helpers\\": "src/"
         }
     },
     "extra": {
