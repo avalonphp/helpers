@@ -118,7 +118,7 @@ class HTML
      *
      * @return string
      */
-    public static function LinkToUnlessCurrent($label, $url, array $attributes = array())
+    public static function linkToUnlessCurrent($label, $url, array $attributes = array())
     {
         if (Request::matches($url)) {
             return $label;

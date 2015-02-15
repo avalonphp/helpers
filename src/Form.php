@@ -205,10 +205,9 @@ class Form
 
         $attributes[] = "value=\"{$option['value']}\"";
 
-        if (
-            (is_array($value) && in_array($option['value'], $value))
-            || ($option['value'] == $value)
-        ) {
+        if ((is_array($value)
+        && in_array($option['value'], $value))
+        || ($option['value'] == $value)) {
             $attributes[] = 'selected="selected"';
         }
 

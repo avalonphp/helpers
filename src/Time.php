@@ -148,7 +148,9 @@ class Time
             $seconds = $chunks[$i][0];
             $name = $chunks[$i][1];
             $names = $chunks[$i][2];
-            if(0 != $count = floor($difference / $seconds)) break;
+            if (0 != $count = floor($difference / $seconds)) {
+                 break;
+            }
         }
 
         // Format the time from
