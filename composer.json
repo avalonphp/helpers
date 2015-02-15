@@ -14,7 +14,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Radium\\Helpers\\": ""
+            "Radium\\Helpers\\": "src/"
         }
     },
     "extra": {
