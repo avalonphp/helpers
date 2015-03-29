@@ -141,7 +141,7 @@ class Pagination
             $this->limit = ($this->page - 1 > 0 ? $this->page - 1 : 0) * $perPage;
 
             // Remove current page from query string
-            $requestArgs = Request::$get;
+            $requestArgs = Request::$query;
             unset($requestArgs['page']);
 
             // Create query string
