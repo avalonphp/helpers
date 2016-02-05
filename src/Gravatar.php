@@ -61,7 +61,7 @@ class Gravatar
      */
     public static function model(BaseModel $model, $size = null)
     {
-        return static::email($model['email'], $size);
+        return static::img($model['email'], $size);
     }
 
     /**
@@ -72,9 +72,9 @@ class Gravatar
      *
      * @return string
      */
-    public static function email($email, $size = null)
+    public static function img($email, $size = null)
     {
-        return '<img src="' . static::getUrl($email, $size) . '" class="gravatar-img">';
+        return '<img src="' . static::url($email, $size) . '" class="gravatar gravatar-' . $size . '">';
     }
 
     /**
@@ -85,7 +85,7 @@ class Gravatar
      *
      * @return string
      */
-    public static function getUrl($email, $size = null)
+    public static function url($email, $size = null)
     {
         $fallback = static::$fallback;
 
