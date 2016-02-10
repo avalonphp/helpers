@@ -78,6 +78,20 @@ class Gravatar
     }
 
     /**
+     * Get image for an email with a string to the right.
+     *
+     * @param string  $email
+     * @param string  $string
+     * @param integer $size
+     *
+     * @return string
+     */
+    public static function withString($email, $string, $size = null)
+    {
+        return static::img($email, $size) . " <span>{$string}</span>";
+    }
+
+    /**
      * Get URL for an email.
      *
      * @param string  $email
